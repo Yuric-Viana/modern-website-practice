@@ -4,7 +4,7 @@
 
 .content {
     position: relative;
-    margin: 15% auto;
+    margin: 15% auto 3em;
     text-align: center;
 
     & .content__titulo {
@@ -36,6 +36,7 @@
         text-align: start;
         border: none;
         margin-right: 1em;
+        outline: none;
     }
 
     & input::placeholder {
@@ -54,6 +55,11 @@
         font-size: 1.3em;
         cursor: pointer;
         border-radius: .5em;
+        transition: all .3s ease;
+    }
+
+    & button:hover {
+        transform: scale(1.1);
     }
 
     & .content__publi {

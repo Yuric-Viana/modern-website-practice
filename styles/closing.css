@@ -67,6 +67,15 @@
     line-height: 1.5em;
 }
 
+#closing-inicio__botao {
+    transition: all .3s ease;
+}
+
+#closing-inicio__botao:hover {
+    transform: translateY(-5px);
+    background-color: #4720F5;
+}
+
 .central-title {
     font-size: 4em;
     margin-top: 3em;
@@ -91,4 +100,132 @@
     border: 1px solid;
     padding: 1em;
     border-radius: .5em;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.central-equipes__item:hover {
+    transform: translateY(-8px);
+}
+
+.central-caixa {
+    border: 1px solid #161515;
+    text-align: start;
+    background-color: #161515;
+    border-radius: 10px;
+    padding: 5em;
+    width: 70%;
+    height: 28em;
+    margin: 1.6em auto;
+}
+
+.central-caixa__title {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 14px;
+}
+
+.central-caixa__text {
+    color: #6f62d0;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.central-caixa__autor {
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    line-height: 1.5em;
+    gap: 1em;
+}
+
+.caixa__autor {
+    width: 5em;
+    height: 5em;
+    border-radius: 14px;
+    opacity: 85%;
+}
+
+.caixa__autor-nome {
+    font-weight: 500;
+}
+
+.central-caixa__info {
+    display: flex;
+    align-items: center;
+    color: #6f62d0;
+    cursor: pointer;
+    width: 7em;
+}
+
+.central-caixa__seta {
+    transition: transform .3s ease;
+}
+
+.central-caixa__info:hover .central-caixa__seta {
+    transform: translateX(10px);
+}
+
+.central-caixa__img {
+    width: 2em;
+}
+
+.central-caixa__info {
+    font-weight: 500;
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+.closing-final {
+    background-color: #161515;
+    padding: 8em 0;
+    margin-top: 8em;
+}
+
+.final-caixa {
+    display: flex;
+    border: 1px solid #8a5cfa;
+    background-color: #AAA0FF;
+    text-align: start;
+    padding:  6em 4em 0; 
+    width: 80%;
+    height: 35em;
+    border-radius: 20px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.final-caixa__div {
+    width: 50%;
+}
+
+.final-caixa__title {
+    color: black;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.final-caixa__text {
+    color: black;
+    font-size: 18px;
+    margin-top: 2em;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.final-caixa__img {
+    width: 24em;
+    height: 20em;
+    border-radius: 15px;
+}
+
+#final-caixa__botao {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#final-caixa__botao:hover {
+    transform: translateY(-5px);
+    background-color: #4720F5;
 }

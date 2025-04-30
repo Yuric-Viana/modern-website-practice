@@ -3,6 +3,9 @@ const navTextList = document.querySelector('.nav-menu__rec')
 const listaMotion = document.querySelector('.submenu--motion');
 const listaRec = document.querySelector('.submenu--resources')
 
+const inputEmail = document.getElementById('content__input-text');
+const clickBotaoInput = document.getElementById('content__input-go');
+
 navText.addEventListener('mouseover', () => {
   if(listaMotion.style.display === 'none') {
     listaMotion.style.display = 'block';
@@ -23,4 +26,14 @@ navTextList.addEventListener('mouseover', () => {
   navTextList.addEventListener('mouseout', () => {
     listaRec.style.display = 'none';
   })
+})
+
+inputEmail.addEventListener('keypress', (evento) => {
+  if(evento.key === 'Enter') {
+    inputEmail.value = "";
+  }
+})
+
+clickBotaoInput.addEventListener('click', (evento) => {
+  inputEmail.value = "";
 })
