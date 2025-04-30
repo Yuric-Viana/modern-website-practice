@@ -1,0 +1,94 @@
+.content__especialistas {
+    font-weight: 600;
+    line-height: 1em;
+    font-size: 60px;
+    max-width: 60%;
+    margin: 0 auto;
+
+    & span {
+        background: linear-gradient(to right, #8A2BE2, #f787f2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.content__texto {
+    max-width: 50%;
+    line-height: 1.4em;
+    margin: 2em auto 0;
+}
+
+#content-botao {
+    transition: all .3s ease;
+}
+
+#content-botao:hover {
+    transform: translateY(-5px);
+    background-color: blue;
+}
+
+.closing-inicio {
+    display: flex;
+    text-align: start;
+    margin-top: 10em;
+    justify-content: space-around;
+
+    & img {
+        width: 40em;
+        height: 30em;
+        border-radius: 2em;
+    }
+}
+
+.inicio-pesquisa {
+    max-width: 40%;
+}
+
+.inicio-pesquisa__info {
+    border: 1px solid #ff98fe;
+    color: #ff98fe;
+    background-color: #69306780;
+    padding: .5em;
+    border-radius: 5px;
+    width: 6em;
+}
+
+.inicio-pesquisa__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.inicio-pesquisa__text {
+    white-space: pre-line;
+    margin-top: 1.8em;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.central-title {
+    font-size: 4em;
+    margin-top: 3em;
+    font-weight: 600;
+}
+
+.central-equipes {
+    display: flex;
+    list-style: none;
+    gap: .6em;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+#item-destaque {
+    background-color: #4720F5;
+    border: none;
+    padding: 1.2em;
+}
+
+.central-equipes__item {
+    border: 1px solid;
+    padding: 1em;
+    border-radius: .5em;
+}

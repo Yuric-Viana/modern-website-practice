@@ -1,0 +1,112 @@
+.container-painel {
+    display: flex;
+
+    & .painel-content__imagem {
+        width: 34em;
+        height: 30em;
+        margin-top: 50%;
+        margin-right: -6em;
+    }
+}
+
+.painel-content {
+    text-align: start;
+    margin-left: 5em;
+    margin-top: 20%;
+    width: 50%;
+
+    & .painel-content__info {
+        border: 1px solid #8357fb;
+        color: #8357fb;
+        background-color: #0e075f;
+        padding: .5em;
+        border-radius: 5px;
+        width: 5.4em;
+    }
+
+    & .painel-content__title {
+        margin-top: 1.5em;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.3em;
+        margin-bottom: .8em;
+    }
+
+    & .painel-content__info2 {
+        line-height: 1.4em;
+        width: 80%;
+    }
+}
+
+.container-central {
+    display: flex;
+    margin-top: 14%;
+    justify-content: center;
+    gap: 3em;
+
+    & img {
+        width: 35em;
+        height: 28em;
+        border-radius: 5px;
+    }
+
+    & .central-content {
+        text-align: start;
+        max-width: 50%;
+        margin-top: 3em;
+        
+        & .central-content__info {
+            border: 1px solid #d635f6;
+            background-color: #39005a;
+            color: #d635f6;
+            width: 6em;
+            border-radius: 5px;
+            padding: .6em;
+        }
+
+        & .central-content__title {
+            margin-top: 1.5em;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 1.3em;
+            margin-bottom: .8em;
+        }
+
+        & .central-content__info2 {
+            line-height: 1.4em;     
+        }
+    }
+}
+
+.container-final {
+    display: flex;
+    margin-top: 14%;
+    text-align: start;
+    justify-content: center;
+
+    & .final-content {
+        max-width: 50%;
+    }
+
+    & .final-content__info {
+        border: 1px solid #fbff00;
+        background-color: #9ba400;
+        color: #fbff00;
+        width: 8em;
+        border-radius: 5px;
+        margin-top: 25%;
+        padding: .6em;
+    }
+
+    & .final-content__title {
+        margin-top: 1.5em;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.3em;
+        margin-bottom: .8em;
+    }
+
+    & .final-content__info2 {
+        line-height: 1.4em;     
+    }
+}
