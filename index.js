@@ -37,3 +37,14 @@ inputEmail.addEventListener('keypress', (evento) => {
 clickBotaoInput.addEventListener('click', (evento) => {
   inputEmail.value = "";
 })
+
+document.querySelectorAll('.submenu__item, .nav-menu__text').forEach(item => {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = item.getAttribute('data-target'); // pega o valor do data-target
+    const targetElement = document.getElementById(targetId); // encontra o elemento com esse ID
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // rola até lá suavemente
+    }
+  });
+});

@@ -146,6 +146,19 @@
     margin: 3em 2em 0 2em;
 }
 
+#central-info,
+#ia {
+    scroll-margin-top: 100px; 
+}
+
+#painel {
+    scroll-margin-top: -100px;
+}
+
+#content-especialistas {
+    scroll-margin-top: 200px;
+}
+
 .content__text {
     & p {
         margin-top: 2em;
@@ -169,4 +182,8 @@
 
 #opcoes {
     margin-right: 2em;
+}
+
+#clientes-feedback {
+    scroll-margin-top: 100px;
 }

@@ -23,10 +23,10 @@
                         </div>
                     </li>
                     <ul class="submenu submenu--motion">
-                        <li class="submenu__item"><img class="submenu__icon" src="img/abobora.png" alt="Abobora">Para gestão</li>
-                        <li class="submenu__item"><img class="submenu__icon" src="img/caixao.png" alt="Caixao">Para estrategistas criativos</li>
-                        <li class="submenu__item"><img class="submenu__icon" src="img/doce.png" alt="Doce">Para compradores de mídia</li>
-                        <li class="submenu__item"><img class="submenu__icon" src="img/milho-doce.png" alt="Milho">Para designers e criativos</li>
+                        <li class="submenu__item" data-target="painel"><img class="submenu__icon" src="img/abobora.png" alt="Abobora">Análise</li>
+                        <li class="submenu__item" data-target="central-info"><img class="submenu__icon" src="img/caixao.png" alt="Caixao">Para estrategistas criativos</li>
+                        <li class="submenu__item" data-target="final-info"><img class="submenu__icon" src="img/doce.png" alt="Doce">Oriente sua equipe</li>
+                        <li class="submenu__item" data-target="ia"><img class="submenu__icon" src="img/milho-doce.png" alt="Milho">IA e Automação</li>
                     </ul>
                 </div>
 
@@ -59,7 +59,7 @@
                         </div>
                     </li>
                 </div>
-                <li class="nav-menu__text nav-menu__opcoes">Agentes
+                <li class="nav-menu__text nav-menu__opcoes" data-target="content-especialistas">Agentes
                     Especialistas</li>
             </ul>
         </div>
@@ -69,7 +69,7 @@
                 <li id="opcoes" class="nav-menu__text nav-menu__opcoes">Novos
                 recursos
                 </li>
-                <li class="nav-menu__text">Clientes</li>
+                <li class="nav-menu__text" data-target="clientes-feedback">Clientes</li>
                 <li class="nav-menu__text">Parceiro</li>
                 <li class="nav-menu__text">Preços</li>
                 <li class="nav-menu__text nav-menu__opcoes">Agende uma
@@ -145,7 +145,7 @@
             </div>
         </section>
         <section class="container">
-            <div class="container-painel">
+            <div class="container-painel" id="painel">
                 <div class="painel-content">
                     <p class="painel-content__info">Analisar</p>
                     <h2 class="painel-content__title">Identificar os principais impulsionadores do desempenho criativo</h2>
@@ -155,7 +155,7 @@
                     <img class="painel-content__imagem" src="img/wallpaper gengar.jpg" alt="wallpaper">
                 </div>
             </div>
-            <div class="container-central">
+            <div class="container-central" id="central-info">
                 <div>
                     <img src="img/imagem-painel.jpg" alt="Imagem painel">
                 </div>
@@ -165,7 +165,7 @@
                     <p class="central-content__info2">Relatórios criativos e fáceis de entender para toda a equipe. Elimine a sobrecarga de informações.</p>
                 </div>
             </div>
-            <div class="container-final">
+            <div class="container-final" id="final-info">
                 <div class="final-content">
                     <p class="final-content__info">Compartilhar</p>
                     <h2 class="final-content__title">Oriente sua equipe na direção criativa correta</h2>
@@ -175,8 +175,9 @@
                     <img src="img/painel.jpg" alt="Imagem painel">
                 </div>
             </div>
+            <div id="ia"></div>
         </section>
-
+        
         <section class="agentes">
             <div class="agentes-ia">
                 <p>IA e Automação</p>
@@ -257,7 +258,7 @@
             <hr class="linha__vertical1">
             <h2 class="agentes__especialistas orientacao">Obtenha <span>recomendações claras, relatórios detalhados e pesquisas</span> para orientar sua equipe.</h2>
             <hr class="linha__vertical1">
-            <div class="agentes-feedback">
+            <div class="agentes-feedback" id="clientes-feedback">
                 <div class="feedback-usuario">
                     <img src="img/Caritas.jpg" alt="Sorriso">
                     <p class="usuario">Dara</p>
@@ -272,7 +273,7 @@
         </section>
         
         <section class="closing">
-            <div class="closing-content">
+            <div class="closing-content" id="content-especialistas">
                 <h2 class="content__especialistas">Comece a usar agentes especialistas para <span>operar 100 vezes mais rápido</span></h2>
                 <p class="content__texto">Estamos adicionando rapidamente novos fluxos de trabalho com IA para ajudar sua equipe a trabalhar mais rápido em cada etapa do ciclo criativo. Os Agentes Especialistas já estão disponíveis. Obtenha acesso antecipado ou faça uma parceria conosco para criar seus próprios agentes.</p>
                 <button id="content-botao">Explore todos os agentes especialistas</button>
