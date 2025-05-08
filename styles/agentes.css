@@ -184,6 +184,7 @@ h2.orientacao {
     color: #000;
     border-radius: 1em;
     text-align: center;
+    transition: all .3s ease;
 
     & img {
         width: 100%;
@@ -197,6 +198,10 @@ h2.orientacao {
     & .grid__img-bunny {
         height: 16em;
     }
+}
+
+.grid__img:hover {
+    scale: 1.1;
 }
 
 .agentes-feedback {

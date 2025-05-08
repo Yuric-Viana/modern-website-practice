@@ -10,15 +10,17 @@
 
 <body>
     <header class="header">
-        <div class="header__left">
+        <div class="header__mobile">
             <img class="header__logo" src="img/logo-site.jpg" alt="Logo da Motion">
-
+            <img class="header__menu" src="img/menu-hamburguer.svg" alt="menu-hamburguer">
+        </div>
+    
+        <div class="header__left">
             <ul class="nav-menu">
-
                 <div class="nav-menu__list">
                     <li class="nav-menu__item">
                         <div class="nav-menu__link">
-                            <p class="nav-menu__text-motion nav-menu__text">Por que movimento?</p>
+                            <p class="nav-menu__text-motion nav-menu__text" onclick="toggleMobileSubmenu()">Por que movimento?</p>
                             <img class="nav-menu__icon" src="img/seta-para-baixo.png" alt="Seta para submenu">
                         </div>
                     </li>
@@ -29,11 +31,10 @@
                         <li class="submenu__item" data-target="ia"><img class="submenu__icon" src="img/milho-doce.png" alt="Milho">IA e Automação</li>
                     </ul>
                 </div>
-
                 <div class="nav-menu__rec">
                     <li class="nav-menu__item">
                         <div class="nav-menu__link">
-                            <p class="nav-menu__text-rec nav-menu__text">Recursos</p>
+                            <p class="nav-menu__text-rec nav-menu__text" onclick="toggleMobileSubmenu()">Recursos</p>
                             <img class="nav-menu__icon" src="img/seta-para-baixo.png" alt="Seta para submenu">
                         </div>
                         <div class="submenu submenu--resources">
@@ -43,7 +44,7 @@
                                 <li class="submenu__item">Assine o Thumbstop</li>
                                 <li class="submenu__item">Central de ajuda</li>
                             </ul>
-                            <div class="submenu__text--img">
+                            <div class="submenu__text--img submenu__responsivo__text--img">
                                 <h2 class="submenu__title">Relatório de tendências criativas 2025
                                     da Motion</h2>
                                 <div class="submenu__content">
@@ -63,7 +64,6 @@
                     Especialistas</li>
             </ul>
         </div>
-
         <div class="header__meio">
             <ul class="nav-menu">
                 <li id="opcoes" class="nav-menu__text nav-menu__opcoes">Novos
@@ -77,13 +77,14 @@
                 </li>
             </ul>
         </div>
-
         <div class="header__fim">
             <ul class="nav-menu">
                 <li>
-                    <button>Começar</button>
+                    <button class="nav-menu__botao">Começar</button>
                 </li>
-                <a class="nav-menu__text" href="#">Conecte-se</a>
+                <li>
+                    <a class="nav-menu__text" href="#">Conecte-se</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -100,19 +101,19 @@
                     <button id="content__input-go">Começar</button>
                 </div>
                 <p class="content__publi">Mais de 2.100 equipes confiam em você. Comece seu teste gratuito de 14 dias hoje mesmo.</p>
-                <div class="content__designer">
+                <div class="content__designer content__flutuante">
                     <img class="content__icon" src="img/abobora.png" alt="Designer">
                     <p>Designer</p>
                 </div>
-                <div class="content__strategist">
+                <div class="content__strategist content__flutuante">
                     <img class="content__icon" src="img/milho-doce.png" alt="Creative strategist">
                     <p>Creative strategist</p>
                 </div>
-                <div class="content__manager">
+                <div class="content__manager content__flutuante">
                     <img class="content__icon" src="img/doce.png" alt="Manager">
                     <p>Manager</p>
                 </div>
-                <div class="content__buyer">
+                <div class="content__buyer content__flutuante">
                     <img class="content__icon" src="img/caixao.png" alt="Media buyer">
                     <p>Media Buyer</p>
                 </div>
@@ -380,8 +381,10 @@
         <div class="rodape-creditos">
             <p>© 2025 Motion Creative Cloud Inc.    Privacidade    Termos</p>
         </div>
-    </footer>
+    </footer> 
 
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>
 </body>
 

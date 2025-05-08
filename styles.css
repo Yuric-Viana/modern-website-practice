@@ -48,6 +48,7 @@ body {
     color: #fff;
 	font-family: var(--font-family);
 	overflow-x: hidden;
+	font-family: var(--font-family);
 }
 ol, ul {
 	list-style: none;
