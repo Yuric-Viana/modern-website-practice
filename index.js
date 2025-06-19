@@ -64,18 +64,3 @@ menu.addEventListener('click', function() {
   if (!headers) return;
   headers.classList.toggle('hidden');
 });
-
-gsap.registerPlugin(ScrollTrigger);
-
-const tl = gsap.timeline();
-
-tl.from(".grid__img", {
-  opacity: 0,
-  stagger: .1,
-  scrollTrigger: {
-    trigger: ".agentes__content",
-    start: "top 60%",
-    end: "bottom 60%", 
-    scrub: 1
-  }
-}) 
